@@ -1,5 +1,5 @@
 body {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Courier', monospace; /*Ubuntu Mono*/
 }
 
 header {
@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     padding: 5px;
     height:  100px;
-    background-color: rebeccapurple;
+    border-bottom: 5px solid rebeccapurple;
 }
 
 .header-left {
@@ -16,8 +16,9 @@ header {
 }
 
 .group-name {
-    color: white;
-    font-size: 55px;
+    color: black;
+    font-size: 75px;
+    font-weight: bold;
 }
 
 .header-left img {
@@ -31,7 +32,7 @@ header {
     flex: 1;
     text-align: right;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
@@ -39,12 +40,11 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    color: white; /* change color to white */
 }
 
 nav ul li span{
-    color: white;
-    font-size: 15px;
+    color: black;
+    font-size: 20px;
     margin: 0 10px;
 }
 
@@ -81,6 +81,29 @@ hr {
 }
 
 
+.text-container {
+    position: absolute;
+    margin-left: 10px; /* Or as much space as you want between the image and the text */
+    width: 220px; /* Adjust this based on the width of the img-container and the desired space between the containers */
+    height: 60px;
+    top: 400px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-container p{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0px;
+    margin: 10px;
+}
+
+
 .arc-container {
     position: relative;
     width: 200px; /* Adjust to half the original width to only show right half circle */
@@ -107,7 +130,7 @@ hr {
 .content-container {
     margin-top: 10px;
     margin-left: 50px; /* Adjust to create space for the new arc */
-    width: 450px; /* Adjust to half the original width to only show right half circle */
+    width: 500px; /* Adjust to half the original width to only show right half circle */
     height: 700px; 
     padding-top: 0px;
     padding-bottom: 20px;
