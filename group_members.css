@@ -1,0 +1,58 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height:  100px;
+    background-color: rebeccapurple;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.group-members {
+    color: white;
+    font-size: 55px;
+}
+
+.header-left img {
+    max-height: 100%;  /* This will restrict the height of the image to the height of its parent, which is the header */
+    width: auto;  /* This will keep the width proportional to the height */
+    margin-right: 10px;  /* Adjust as needed */
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    color: white; /* change color to white */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+.header-right nav ul li {
+    display: inline;
+    margin: 0 10px;
+    color: white; /* Sets the text color to white */
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: grey;  
+}

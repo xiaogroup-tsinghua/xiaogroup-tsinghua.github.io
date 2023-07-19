@@ -1,0 +1,163 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height:  100px;
+    background-color: rebeccapurple;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.group-name {
+    color: white;
+    font-size: 55px;
+}
+
+.header-left img {
+    max-height: 100%;  /* This will restrict the height of the image to the height of its parent, which is the header */
+    width: auto;  /* This will keep the width proportional to the height */
+    margin-right: 10px;  /* Adjust as needed */
+}
+
+
+.header-right {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    color: white; /* change color to white */
+}
+
+nav ul li span{
+    color: white;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.header-right nav ul li {
+    display: inline;
+    margin: 0 10px;
+    color: black; /* Sets the text color to black */
+}
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: grey;  
+}
+
+
+.combined-container {
+    position: relative;
+}
+
+.img-container {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    top: 200px;  /* Adjust this as needed */
+    left: 20px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.arc-container {
+    position: relative;
+    width: 200px; /* Adjust to half the original width to only show right half circle */
+    height: 700px;
+    overflow: hidden;
+    float: left;
+    margin-left: 200px;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+.arc {
+    box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 900px;
+    border: 10px solid rebeccapurple; /* Adjust border width and color to your liking */
+    border-radius: 50%;
+    border-left: none; /* Remove the left border to only show the right semi-circle */
+    left: -100px; /* Shift the arc to the left by half of its width */
+    top: -100px;
+}
+
+.content-container {
+    margin-top: 10px;
+    margin-left: 50px; /* Adjust to create space for the new arc */
+    width: 450px; /* Adjust to half the original width to only show right half circle */
+    height: 700px; 
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 350px;
+}
+
+
+.content-section {
+    position: relative;
+    padding-top: 0px;
+    font-size: 40px;
+    padding-bottom: 120px;
+}
+
+
+.content-section p {
+    position: absolute;
+    display: inline-block;
+    padding-left: 150px;
+}
+
+.content-section p::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+
+.content-section p::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 2px;
+    background-color: rebeccapurple;
+    width: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: rebeccapurple;
+    display: block;
+}
+
+
+
