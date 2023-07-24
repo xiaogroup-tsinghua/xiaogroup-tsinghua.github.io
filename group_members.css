@@ -14,12 +14,6 @@ header {
     display: flex;
     align-items: center;
 }
-
-.group-members {
-    color: white;
-    font-size: 55px;
-}
-
 .header-left img {
     max-height: 100%;  /* This will restrict the height of the image to the height of its parent, which is the header */
     width: auto;  /* This will keep the width proportional to the height */
@@ -33,26 +27,97 @@ header {
     align-items: center;
     justify-content: flex-end;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    color: white; /* change color to white */
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
 .header-right nav ul li {
     display: inline;
     margin: 0 10px;
     color: white; /* Sets the text color to white */
 }
 
-hr {
-    border: 0;
-    height: 2px;
-    background-color: grey;  
+.group-members {
+    color: white;
+    font-size: 55px;
+}
+/* Everything above are the header part like other sub pages */
+
+
+.content-container {
+    display: flex;
+}
+
+.left-catalogue {
+    width: 20%; /* adjust as necessary */
+    border-right: 1px solid #ddd;  optional 
+    /*position: fixed;*/
+}
+.left-catalogue ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.left-catalogue ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+.main-text {
+    width: 80%; /* adjust as necessary */
+    padding-left: 5%; /* adjust as necessary */   /* if set the left catalogue to have a fix positon */;
+}
+.main-text > div {
+    margin-bottom: 30px; /* Adjust as necessary for blank space */
+    /*border-bottom: 1px solid grey;  Adds a grey underline */
+    padding-bottom: 10px; /* Adds some padding between the content and the underline */
+}
+.main-text h2 {
+    font-size: 40px; /* For example */
+}
+/* Everything above are the main container part without personal info */
+
+
+.person-info {
+    display: flex;
+    align-items: stretch; /* This will make the children of .person-info the same height */
+    font-size: 16px;
+    height:  300px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey; 
+    padding-top: 15px;
+}
+
+.image-container {
+    max-height:  300px;
+    margin-right: 20px; /* Adjust as necessary */
+}
+.image-container img {
+    max-height: 100%;
+    width: auto;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* This will distribute the space evenly */
+}
+
+
+.name-container, .interest-container, .mail-container {
+    flex: auto; /* This will make .name-container and .interest-container share the available space */
+}
+
+.name-container h3, .interest-container h3, .mail-container h3 {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    font-size: 25px;
+}
+.person-info ul li {
+    font-size: 20px; /* For example */
+}
+
+.mail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
