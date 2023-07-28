@@ -28,9 +28,7 @@ header {
 
 .all-container {
     display: flex;
-    justify-content: space-between;
 }
-
 
 @media screen and (max-width: 1281px) {
     .left-catalogue {
@@ -39,10 +37,8 @@ header {
     .main-text {
         width: 100%; /* fill the entire width when left catalogue is hidden */
         padding-left: 2%; /* you may want to adjust this padding */
-        overflow: auto;
     }
 }
-
 
 .left-catalogue {
     width: 20%; /* adjust as necessary */
@@ -65,9 +61,8 @@ header {
 }
 
 .main-text {
-    width: 100%; /* adjust as necessary */
+    width: 80%; /* adjust as necessary */
     padding-left: 2%; /* adjust as necessary */   /* if set the left catalogue to have a fix positon */;
-    overflow: auto;
 }
 
 .main-text > div {
@@ -94,6 +89,7 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid grey;
     height: 420px;
+    min-width: 760px;
 }
 
 .toc, .references {
