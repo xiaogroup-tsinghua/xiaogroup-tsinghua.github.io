@@ -68,7 +68,7 @@ body {
     position: absolute;
     width: 800px;
     height: 800px;
-    border: 20px solid rebeccapurple; /* Adjust border width and color to your liking */
+    border: 20px solid rgb(102,8,116); /* Adjust border width and color to your liking */
     border-radius: 50%;
     border-top: 50px; /* Remove the left border to only show the right semi-circle */
     border-bottom: 50px;
@@ -109,7 +109,7 @@ body {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     border-radius: 50%;
 }
 .members-line p::after {
@@ -120,7 +120,7 @@ body {
     transform: translateY(-50%);
     width: 8px;
     height: 2px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     width: 200px;                             /*sum with margin-left should be a constant*/
 }
 /*####################################################################*/
@@ -146,7 +146,7 @@ body {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     border-radius: 50%;
 }
 .research-line p::after {
@@ -157,7 +157,7 @@ body {
     transform: translateY(-50%);
     width: 8px;
     height: 2px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     width: 110px;                             /*sum with margin-left should be a constant*/
 }
 /*####################################################################*/
@@ -184,7 +184,7 @@ body {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     border-radius: 50%;
 }
 .publications-line p::after {
@@ -195,7 +195,7 @@ body {
     transform: translateY(-50%);
     width: 8px;
     height: 2px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     width: 80px;                             /*sum with margin-left should be a constant*/
 }
 /*####################################################################*/
@@ -222,7 +222,7 @@ body {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     border-radius: 50%;
 }
 .news-line p::after {
@@ -233,7 +233,7 @@ body {
     transform: translateY(-50%);
     width: 8px;
     height: 2px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     width: 110px;                             /*sum with margin-left should be a constant*/
 }
 /*####################################################################*/
@@ -260,7 +260,7 @@ body {
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     border-radius: 50%;
 }
 .openings-line p::after {
@@ -271,7 +271,7 @@ body {
     transform: translateY(-50%);
     width: 8px;
     height: 2px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
     width: 200px;                             /*sum with margin-left should be a constant*/
 }
 /*####################################################################*/
@@ -279,6 +279,6 @@ body {
 
 a {
     text-decoration: none;
-    color: rebeccapurple;
+    color: rgb(102,8,116);
     display: block;
 }

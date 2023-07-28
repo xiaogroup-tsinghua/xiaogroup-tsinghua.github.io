@@ -6,7 +6,7 @@
     <script>
         function adjustViewport() {
             var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-            var scale = (w < 1000) ? 0.2 : 0.6;
+            var scale = (w < 1281) ? 0.2 : 0.6;
             document.getElementById('myViewport').setAttribute('content', 'width=device-width, initial-scale=' + scale);
         }
         adjustViewport();

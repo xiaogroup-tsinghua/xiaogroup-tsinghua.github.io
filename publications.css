@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     padding: 5px;
     height:  100px;
-    background-color: rebeccapurple;
+    background-color: rgb(102,8,116);
 }
 
 .header-left {
@@ -57,7 +57,7 @@ header {
     display: block;
     padding: 20px;
     text-decoration: none;
-    color: rebeccapurple;
+    color: rgb(102,8,116);
 }
 
 .main-text {
@@ -84,7 +84,7 @@ header {
 .ti {
     font-size: 25px;
     padding-bottom: 10px;
-    color:  rebeccapurple;
+    color: rgb(102,8,116);
 }
 .au, .jo {
     font-size: 20px;
