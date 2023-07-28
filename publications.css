@@ -111,12 +111,12 @@ header {
     padding: 5%; /* Remove default padding from list */
     margin: 5%; /* Remove default margin from list */
     display: flex; /* Make list a flex container too */
-    align-items: center; /* This will center the list item vertically */
+    align-items: left; /* This will center the list item vertically */
     justify-content: center; /* This will center the list item horizontally */
     flex-direction: column; 
     width: 100%;
 }
 
 .references ul li {
-    text-align: center; /* Align text within list item to center */
+    text-align: left; /* Align text within list item to center */
 }
