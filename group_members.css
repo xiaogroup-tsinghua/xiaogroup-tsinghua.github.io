@@ -6,7 +6,7 @@ header {
     display: flex;
     padding: 5px;
     height:  100px;
-    width: 99vw;
+    width: 98vw;
     background-color: rebeccapurple;
 }
 
@@ -26,9 +26,18 @@ header {
 }
 /* Everything above are the header part like other sub pages */
 
-
 .content-container {
     display: flex;
+}
+
+@media screen and (max-width: 1281px) {
+    .left-catalogue {
+        display: none;
+    }
+    .main-text {
+        width: 100%; /* fill the entire width when left catalogue is hidden */
+        padding-left: 2%; /* you may want to adjust this padding */
+    }
 }
 
 .left-catalogue {
@@ -68,8 +77,9 @@ header {
     display: flex;
     align-items: stretch; /* This will make the children of .person-info the same height */
     font-size: 16px;
-    height: 300px;
-    padding-bottom: 15px;
+    height: 320px;
+    width: 100%;
+    padding-bottom: 20px;
     border-bottom: 1px solid grey; 
     padding-top: 15px;
 }
@@ -87,11 +97,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: start; /* This will distribute the space evenly */
+    height: 100%;
 }
 
 
 .name-container, .interest-container, .mail-container {
-    flex: auto; /* This will make .name-container and .interest-container share the available space */
+    flex-grow: 1;
+    display: flex; /* This will make .name-container and .interest-container share the available space */
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .name-container h3, .interest-container h3, .mail-container h3 {
