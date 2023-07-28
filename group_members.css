@@ -106,10 +106,11 @@ header {
 
 .name-container, {
     flex-grow: 1;
-    display: inline; /* This will make .name-container and .interest-container share the available space */
+    display: flex; /* This will make .name-container and .interest-container share the available space */
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
+    max-width: 50%;
     padding: 0;
     margin: 0;
 }
