@@ -26,33 +26,16 @@ header {
     margin-right: 10px;  /* Adjust as needed */
 }
 
-.header-right {
-    flex: 1;
-    text-align: right;
-    display: flex;
+.all-container {
+    width: 99vw;
+    height: 80vh;
     align-items: center;
-    justify-content: flex-end;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    color: white; /* change color to white */
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-.header-right nav ul li {
-    display: inline;
-    margin: 0 10px;
-    color: white; /* Sets the text color to white */
-}
-
-hr {
-    border: 0;
-    height: 2px;
-    background-color: grey;  
+.new {
+    padding: 15%;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
 }
