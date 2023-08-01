@@ -1,0 +1,122 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+    display: flex;
+    padding: 5px;
+    height:  100px;
+    width: 99%;
+    min-width: 768px;
+    background-color: rgb(102,8,116);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-left img {
+    max-height: 100%;  /* This will restrict the height of the image to the height of its parent, which is the header */
+    width: auto;  /* This will keep the width proportional to the height */
+    margin-right: 10px;  /* Adjust as needed */
+}
+
+.publications {
+    color: white;
+    font-size: 55px;
+}
+
+.all-container {
+    display: flex;
+}
+
+@media screen and (max-width: 1281px) {
+    .left-catalogue {
+        display: none;
+    }
+    .main-text {
+        width: 100%; /* fill the entire width when left catalogue is hidden */
+        padding-left: 2%; /* you may want to adjust this padding */
+    }
+}
+
+.left-catalogue {
+    width: 20%; /* adjust as necessary */
+    border-right: 1px solid #ddd;  optional 
+    /*position: fixed;*/
+}
+.left-catalogue ul {
+    list-style: none;
+    padding-left: 10%;
+    font-size: 30px;
+}
+.left-catalogue ul li a {
+    display: block;
+    padding-top: 40px;
+    padding-left: 0px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: rgb(102,8,116);
+
+}
+
+.main-text {
+    width: 80%; /* adjust as necessary */
+    padding-left: 2%; /* adjust as necessary */   /* if set the left catalogue to have a fix positon */;
+}
+
+.main-text > div {
+    margin-bottom: 30px; /* Adjust as necessary for blank space */
+    border-bottom: 1px solid grey;  /*Adds a grey underline */
+    padding-bottom: 10px; /* Adds some padding between the content and the underline */
+}
+.main-text h2 {
+    font-size: 40px; /* For example */
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.main-text ul li {
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.paper-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    height: 420px;
+    min-width: 760px;
+}
+
+.toc, .references {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.toc img {
+    max-height: 80%;
+    max-width: 80%;
+    padding: 5%; /* Remove default padding from list */
+    margin: 5%; /* Remove default margin from list */
+}
+
+.references ul {
+    padding: 5%; /* Remove default padding from list */
+    margin: 5%; /* Remove default margin from list */
+    display: flex; /* Make list a flex container too */
+    align-items: left; /* This will center the list item vertically */
+    justify-content: center; /* This will center the list item horizontally */
+    flex-direction: column; 
+    width: 100%;
+}
+
+.references ul li {
+    text-align: left; /* Align text within list item to center */
+}
