@@ -115,6 +115,8 @@ header {
     justify-content: center; /* This will center the list item horizontally */
     flex-direction: column; 
     width: 100%;
+    list-style-type: none; /* This will remove the bullet point */
+
 }
 
 .references ul li {
