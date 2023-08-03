@@ -18,6 +18,7 @@ header {
 .news {
     color: white;
     font-size: 55px;
+    padding-left: 40px;
 }
 
 .header-left img {
