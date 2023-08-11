@@ -147,3 +147,8 @@ sup {
     position: relative;
     top: -0.5em;
 }
+
+.xh {
+    font-weight: bold;
+    text-decoration: underline;
+}
