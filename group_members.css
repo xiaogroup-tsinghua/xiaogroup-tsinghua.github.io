@@ -16,6 +16,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .header-left img {
     max-height: 100%;  /* This will restrict the height of the image to the height of its parent, which is the header */
     width: auto;  /* This will keep the width proportional to the height */
@@ -42,7 +43,7 @@ header {
     font-size: 55px;
     padding-left: 40px;
 }
-/* Everything above are the header part like other sub pages */
+
 
 .content-container {
     display: flex;
