@@ -28,32 +28,15 @@ header {
 }
 
 .header-right {
-    flex: 1;
-    text-align: right;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: center; /* centers vertically */
+    justify-content: flex-end; /* centers horizontally */
+    padding-right: 40px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    color: white; /* change color to white */
+.header-right a {
+    color: white; 
+    font-size: 35px;
+    text-decoration: none;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-.header-right nav ul li {
-    display: inline;
-    margin: 0 10px;
-    color: white; /* Sets the text color to white */
-}
-
-hr {
-    border: 0;
-    height: 2px;
-    background-color: grey;  
-}

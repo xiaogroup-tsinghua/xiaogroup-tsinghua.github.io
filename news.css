@@ -27,6 +27,20 @@ header {
     margin-right: 10px;  /* Adjust as needed */
 }
 
+.header-right {
+    display: flex;
+    align-items: center; /* centers vertically */
+    justify-content: flex-end; /* centers horizontally */
+    padding-right: 40px;
+}
+
+.header-right a {
+    color: white; 
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
 .all-container {
     width: 99vw;
     height: 80vh;
