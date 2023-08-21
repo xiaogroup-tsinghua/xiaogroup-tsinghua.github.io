@@ -49,37 +49,71 @@ header {
     display: flex;
 }
 
-@media screen and (max-width: 1281px) {
+
+/* Add this to your existing CSS file */
+@media screen and (max-width: 1280px) {
     .left-catalogue {
-        display: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;  optional 
     }
-    .main-text {
-        width: 100%; /* fill the entire width when left catalogue is hidden */
-        padding-left: 2%; /* you may want to adjust this padding */
-        padding-right: 0;
-        margin-right: 0;
+    .all-container {
+        flex-direction: column;
+    }
+    .left-catalogue ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-left: 10%;
+        font-size: 30px;
+        list-style: none;
+    }
+    .left-catalogue ul li {
+        flex: 1;
+        text-align: center;
+    }
+    .left-catalogue ul li a {
+        display: block;
+        padding-top: 40px;
+        padding-left: 0px;
+        margin-left: 0px;
+        text-decoration: none;
+        color: rgb(102,8,116);
     }
 }
 
-.left-catalogue {
-    width: 20%; /* adjust as necessary */
-    border-right: 1px solid #ddd;  optional 
-    /*position: fixed;*/
+@media screen and (min-width: 1281px) {
+    .all-container {
+        flex-direction: row;
+    }
+    .left-catalogue {
+        width: 20%;
+        border-right: 1px solid #ddd;  optional 
+        display: block;
+        margin-right: 20px;
+    }
+    .left-catalogue ul {
+        display: block;
+        padding-left: 10%;
+        font-size: 30px;
+        list-style: none;
+    }
+    .left-catalogue ul li {
+        width: auto;
+        text-align: left;
+    }
+    .left-catalogue ul li a {
+        display: block;
+        padding-top: 40px;
+        padding-left: 0px;
+        margin-left: 0px;
+        text-decoration: none;
+        color: rgb(102,8,116);
+    }
 }
-.left-catalogue ul {
-    list-style: none;
-    padding-left: 10%;
-    font-size: 30px;
-}
-.left-catalogue ul li a {
-    display: block;
-    padding-top: 40px;
-    padding-left: 0px;
-    margin-left: 0px;
-    text-decoration: none;
-    color: rgb(102,8,116);
 
-}
+
 
 .main-text {
     width: 80%; /* adjust as necessary */
@@ -160,7 +194,7 @@ header {
     font-style: italic;
 }
 
-
+/*<sup>#&</sup>*/
 sup {
     font-size: 75%;
     line-height: 0;
