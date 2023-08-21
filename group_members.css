@@ -91,6 +91,23 @@ header {
 }
 /* Everything above are the main container part without personal info */
 
+.person-info-pi {
+    display: flex;
+    align-items: stretch; /* This will make the children of .person-info the same height */
+    font-size: 16px;
+    height: 356px;
+    width: 100%;
+    min-width: 760px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey; 
+    padding-top: 10px;
+    font-family: 'Aries', sans-serif;
+}
+
+.person-info-pi .image-container img {
+    max-height: 91%;
+    width: auto;
+}
 
 .person-info {
     display: flex;
