@@ -81,6 +81,12 @@ header {
         text-decoration: none;
         color: rgb(102,8,116);
     }
+
+    .main-text {
+        width: 100%; /* adjust as necessary */
+        padding-left: 1%; /* adjust as necessary */   /* if set the left catalogue to have a fix positon */
+        padding-right: 1%;
+    }
 }
 
 @media screen and (min-width: 1281px) {
@@ -111,14 +117,13 @@ header {
         text-decoration: none;
         color: rgb(102,8,116);
     }
+    .main-text {
+        width: 80%; /* adjust as necessary */
+        padding-left: 2%; /* adjust as necessary */   /* if set the left catalogue to have a fix positon */;
+        padding-right: 2%;
+    }
 }
 
-
-
-.main-text {
-    width: 80%; /* adjust as necessary */
-    padding-left: 2%; /* adjust as necessary */   /* if set the left catalogue to have a fix positon */;
-}
 
 .main-text > div {
     margin-bottom: 30px; /* Adjust as necessary for blank space */
@@ -145,8 +150,9 @@ header {
     border-bottom: 1px solid grey;
     height: 420px;
     width: 100%;
-    min-width: 800px;
+    min-width: 1000px;
     font-family: 'Aries', sans-serif;
+    background-color: yellow;
 }
 
 .toc, .references {
