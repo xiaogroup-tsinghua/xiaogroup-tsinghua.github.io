@@ -71,4 +71,6 @@ header {
 ul li {
     text-align: center;
     font-size: 20px;
+    list-style-type: none;
+    font-family: 'Aries', sans-serif;
 }
