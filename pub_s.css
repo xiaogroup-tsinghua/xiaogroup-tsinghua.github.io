@@ -28,7 +28,7 @@ header {
     display: flex;
     align-items: center; /* centers vertically */
     justify-content: flex-end; /* centers horizontally */
-    margin-right: 40px;
+    margin-right: 60px;
 }
 
 .header-right a {
