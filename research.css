@@ -1,5 +1,6 @@
 body {
     font-family: 'Ubuntu Mono', monospace;
+
 }
 
 header {
@@ -48,34 +49,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 99vw;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 10vh; /* Adjust as needed */
 }
 
 .main-part {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin-bottom: 30px; /* Adjust as needed */
-    border-bottom: 2px solid #ddd;  optional 
-}
-
-
-.photo-container {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 400px; /* Adjust as needed */
-    padding: 0px;
+    width: 70%;
 }
-
-.photo-container img {
-    max-height: 450px;
-    width: auto;
-}
-
 
 .text-container {
     display: block;
@@ -83,18 +68,22 @@ header {
     height: 40%; /* Adjust as needed */
 }
 
-.text-container h2 {
-    font-size: 36px;
-    color: black;
-    margin-bottom: 20px; /* Adjust as needed */
-    text-align: center; /* Center the text within the row */
-    font-family: 'Aries', sans-serif;
-}
 
 .text-container p {
     font-size: 24px;
     color: black;
-    text-indent: 96px; /* Adjust as needed */
+    /*text-indent: 96px;  Adjust as needed */
     margin-bottom: 10px; /* Adjust as needed */
     font-family: 'Aries', sans-serif;
+}
+
+.text-container ul li {
+    font-size: 24px;
+    color: black;
+    /*text-indent: 96px;  Adjust as needed */
+    font-family: 'Aries', sans-serif;
+}
+
+a {
+    color: rgb(102,8,116);
 }
