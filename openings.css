@@ -1,7 +1,5 @@
 body {
     font-family: 'Ubuntu Mono', monospace;
-    height: 100vh;
-    margin: 0;
 }
 
 header {
@@ -9,18 +7,14 @@ header {
     justify-content: space-between;
     padding: 5px;
     height:  100px;
+    width: 99%;
+    min-width: 768px;
     background-color: rgb(102,8,116);
 }
 
 .header-left {
     display: flex;
     align-items: center;
-}
-
-.openings {
-    color: white;
-    font-size: 55px;
-    padding-left: 40px;
 }
 
 .header-left img {
@@ -44,6 +38,12 @@ header {
 }
 
 
+.openings {
+    color: white;
+    font-size: 55px;
+    padding-left: 40px;
+}
+
 
 .all-container {
     display: flex;
@@ -62,6 +62,13 @@ header {
 }
 
 .PD {
+    font-size: 30px;
+    padding: 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.UG {
     font-size: 30px;
     padding: 1em 0;
     font-weight: bold;
