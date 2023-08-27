@@ -152,6 +152,17 @@ header {
     height: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.text-container-stu {
+    display: inline;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .name-container, {
@@ -172,4 +183,38 @@ header {
 }
 .person-info ul li {
     font-size: 20px; /* For example */
+}
+
+
+/*###############################################*/
+
+.text-container h4 {
+    font-size: 32px;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.text-container p {
+    font-size: 24px;
+}
+
+.text-container a {
+    font-size: 24px;
+    color: rgb(102,8,116);
+}
+
+
+.text-container-stu h4 {
+    font-size: 28px;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.text-container-stu p {
+    font-size: 20px;
+}
+
+.text-container-stu a {
+    font-size: 20px;
+    color: rgb(102,8,116);
 }
