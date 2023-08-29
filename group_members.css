@@ -218,3 +218,9 @@ header {
     font-size: 20px;
     color: rgb(102,8,116);
 }
+
+.text-container-stu h4 span {
+    font-size: 20px;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
