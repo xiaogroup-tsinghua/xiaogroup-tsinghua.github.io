@@ -1,0 +1,97 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height:  120px;
+    width: 99%;
+    min-width: 768px;
+    background-color: rgb(102,8,116);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    max-height: 100%;  /* This will restrict the height of the image to the height of its parent, which is the header */
+    width: auto;  /* This will keep the width proportional to the height */
+    margin-right: 10px;  /* Adjust as needed */
+}
+
+.title-catalogue {
+    display: flex; /* makes children align vertically */
+    flex-direction: column; 
+    align-items: flex-start; /* aligns children to the left */
+    height: 100%;
+    padding-top: 20px;
+}
+
+.catalogue {
+    display: flex; /* makes children align horizontally */
+    width: 100%;   /* occupy full width of its parent */
+    justify-content: space-around; /* distribute the children with equal space around them */
+    align-items: center; /* vertically aligns the children to the center */
+    margin-top: 10px; /* space between 'Openings' and the catalogue */
+}
+
+.catalogue a {
+    display: flex; /* Makes this span a flex container */
+    justify-content: flex-start; /* Horizontally aligns content to the start, in this case, the left */
+    align-items: flex-end; /* Vertically aligns content to the end, in this case, the bottom */
+    height: 90%;
+    line-height: 100%;
+    text-align: left; 
+    font-size: 30px;
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    color: white;
+    font-size: 60px;
+    padding-left: 40px;
+}
+
+
+.all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 99vw;
+    height: 80vh;
+}
+
+.GS {
+    font-size: 30px;
+    padding: 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.PD {
+    font-size: 30px;
+    padding: 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.UG {
+    font-size: 30px;
+    padding: 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul li {
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: 'Aries', sans-serif;
+}
